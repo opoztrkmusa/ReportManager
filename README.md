@@ -13,8 +13,13 @@ Projenin çalıştırılabilmesi için aşağıdaki adımları takip etmeniz ger
 
 2. **Frontend'i Başlatın:**  
 Uygulamanın frontend kısmını başlatmak için şu komutu çalıştırın:
+
 ```bash
 cd reportmanager-main
+`````
+
+```bash
+npm install -D vite
 `````
 
 ```bash
