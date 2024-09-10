@@ -28,17 +28,33 @@ Raporları Görüntüle: http://localhost:5000/reports
 Tekil Rapor Detayı: http://localhost:5000/reports/
 
 <br>
-Özellikler:
-Yeni rapor ekleyebilir: /add-report
-Mevcut raporları görüntüleyebilir: /reports
-Belirli bir raporu detaylı olarak inceleyebilir: /reports/:id
-Bir raporu düzenleyebilir: /reports/edit/:id
-Kullanılan Teknolojiler:
-React: Kullanıcı arayüzünü oluşturmak için.
-JSON Server: Hızlı prototip geliştirmek için sahte bir API sağlar.
-Tailwind CSS: Modern ve duyarlı bir tasarım sağlar.
-Geliştirme Notları:
-Bu proje, yapay zeka destekli bir rehber ile oluşturulmuştur. Proje sürecinde bazı tasarım detaylarına yeterince odaklanılmamış olabilir, bu nedenle öneri ve iyileştirmelere açığız.
 
-İletişim:
+<br>
+<h2>Özellikler:</h2>
+<ul>
+    <li>Yeni rapor ekleyebilir: /add-report</li>
+      <li>Belirli bir raporu detaylı olarak inceleyebilir: /reports/:id</li>
+     <li>Bir raporu düzenleyebilir: /reports/edit/:id</li>
+
+</ul>
+<br>
+<h2>Kullanılan Teknolojiler:</h2>
+<ul>
+    <li>React: Kullanıcı arayüzünü oluşturmak için.</li>
+    <li>JSON Server: Hızlı prototip geliştirmek için sahte bir API sağlar.</li>
+    <li>Tailwind CSS: Modern ve duyarlı bir tasarım sağlar.</li>
+    <li>Mantine: Kullanıcı arayüzü bileşenleri ve stil yönetimi için modern bir kütüphanedir.</li>
+</ul>
+<br>
+
+<h2>Geliştirme Notları:</h2>
+<ul>
+   Bu proje, yapay zeka desteği ile oluşturulmuştur. Backend bilgim sınırlı olduğundan, proje sürecinde yapay zekadan yardım alarak geliştirilmiştir.
+</ul>
+
+
+
+<br>
+
+<h2>İletişim:</h2>
 Staj sürecimin son günü nedeniyle zaman kısıtlamaları yaşanmış olabilir. Proje hakkında daha fazla bilgi almak için benimle iletişime geçebilirsiniz.
