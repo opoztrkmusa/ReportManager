@@ -18,7 +18,7 @@ npm run dev
 `````
 
 <br><br>
-**Uygulama URL'leri:**
+<h2>Uygulama URL'leri:</h2>
 <br>
 JSON Server'ı başlattıktan sonra aşağıdaki URL'leri kullanarak uygulamanızı inceleyebilirsiniz:
 <br>
