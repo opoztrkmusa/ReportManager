@@ -65,7 +65,7 @@ const AddReport = () => {
         // Optionally, clear file input
         (document.getElementById('example1') as HTMLInputElement).value = '';
     };
-    git pull origin main;
+ 
 
 
     return (
