@@ -11,14 +11,14 @@ Projenin çalıştırılabilmesi için aşağıdaki adımları takip etmeniz ger
    ```bash
    json-server --watch ./src/db.json --port 5000
 
-2. ** Frontend'i Başlatın: **
+2. **Frontend'i Başlatın:**  
 Uygulamanın frontend kısmını başlatmak için şu komutu çalıştırın:
 bash
 Kodu kopyala
 npm run dev
 Uygulama URL'leri:
 JSON Server'ı başlattıktan sonra aşağıdaki URL'leri kullanarak uygulamanızı inceleyebilirsiniz:
-
+<br>
 Raporları Görüntüle: http://localhost:5000/reports
 Tekil Rapor Detayı: http://localhost:5000/reports/
 Özellikler:
