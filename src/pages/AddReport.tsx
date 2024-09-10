@@ -33,9 +33,40 @@ const AddReport = () => {
 
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
+
+        // Validation checks
+        const fileNumberPattern = /^[0-9]{6,}$/; // En az 6 haneli
+        const hastaTCPattern = /^[0-9]{11}$/; // 11 haneli
+
+        if (!fileNumberPattern.test(form.fileNumber)) {
+            alert('Dosya numarası en az 6 haneli olmalıdır.');
+            return;
+        }
+
+        if (!hastaTCPattern.test(form.hastaTC)) {
+            alert('Hasta TC Kimlik Numarası 11 haneli olmalıdır.');
+            return;
+        }
+
+        // Dispatch form data to redux store
         dispatch(addReport(form));
-        // Form gönderildikten sonra temizleme veya yönlendirme yapılabilir
+
+        // Reset form values
+        setForm({
+            fileNumber: '',
+            hastaName: '',
+            hastaTC: '',
+            taniTitle: '',
+            taniDetail: '',
+            taniDate: '',
+            taniImage: null,
+        });
+
+        // Optionally, clear file input
+        (document.getElementById('example1') as HTMLInputElement).value = '';
     };
+    git pull origin main
+
 
     return (
         <div className='px-12'>
@@ -78,6 +109,8 @@ const AddReport = () => {
                                 onChange={handleChange}
                                 placeholder="12345678901"
                                 className="w-full rounded-md border border-gray-400 bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
+                                pattern="\d{11}" // 11 haneli numara
+                                title="11 haneli bir TC Kimlik Numarası giriniz."
                             />
                         </div>
 
@@ -129,6 +162,7 @@ const AddReport = () => {
                                 required
                                 type="file"
                                 onChange={handleFileChange}
+                                accept=".png,.jpg"
                                 className="mt-2 block w-full text-sm file:mr-4 file:rounded-md file:border-0 file:bg-teal-600 file:py-2 file:px-4 file:text-sm file:font-semibold file:text-white hover:file:bg-teal-700 focus:outline-none disabled:pointer-events-none disabled:opacity-60"
                             />
                         </div>
