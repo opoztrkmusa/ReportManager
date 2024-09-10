@@ -6,12 +6,12 @@ Bu proje, hasta raporlarının yönetimini sağlayan bir uygulamadır. Kullanıc
 ## Başlangıç:
 Projenin çalıştırılabilmesi için aşağıdaki adımları takip etmeniz gerekmektedir:
 
-**JSON Server'ı Başlatın:**
+1. **JSON Server'ı Başlatın:**  
    JSON Server'ı başlatmak için, terminal veya komut satırında şu komutu çalıştırın:
    ```bash
-   json-server --watch ./src/db.json --port 5000
+   json-server --watch ./src/db.json --port 5000 ````
 
-3. **Frontend'i Başlatın:**  
+2. **Frontend'i Başlatın:**  
 Uygulamanın frontend kısmını başlatmak için şu komutu çalıştırın:
 ```bash
 npm run dev
