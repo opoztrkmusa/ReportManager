@@ -13,14 +13,20 @@ Projenin çalıştırılabilmesi için aşağıdaki adımları takip etmeniz ger
 
 2. **Frontend'i Başlatın:**  
 Uygulamanın frontend kısmını başlatmak için şu komutu çalıştırın:
-bash
-Kodu kopyala
-npm run dev
-Uygulama URL'leri:
+```bash
+   npm run dev
+`````
+
+<br><br>
+**Uygulama URL'leri:**
+<br>
 JSON Server'ı başlattıktan sonra aşağıdaki URL'leri kullanarak uygulamanızı inceleyebilirsiniz:
 <br>
+
 Raporları Görüntüle: http://localhost:5000/reports
 Tekil Rapor Detayı: http://localhost:5000/reports/
+
+<br>
 Özellikler:
 Yeni rapor ekleyebilir: /add-report
 Mevcut raporları görüntüleyebilir: /reports
