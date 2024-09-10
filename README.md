@@ -14,7 +14,7 @@ Projenin çalıştırılabilmesi için aşağıdaki adımları takip etmeniz ger
 2. **Frontend'i Başlatın:**  
 Uygulamanın frontend kısmını başlatmak için şu komutu çalıştırın:
 ```bash
-   npm run dev
+npm run dev
 `````
 
 <br><br>
@@ -24,6 +24,7 @@ JSON Server'ı başlattıktan sonra aşağıdaki URL'leri kullanarak uygulamanı
 <br>
 
 Raporları Görüntüle: http://localhost:5000/reports
+<br>
 Tekil Rapor Detayı: http://localhost:5000/reports/
 
 <br>
