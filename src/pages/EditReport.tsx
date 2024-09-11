@@ -38,27 +38,30 @@ const ReportEdit = () => {
     };
 
     const handleSubmit = async (e: React.FormEvent) => {
-        e.preventDefault();
-        if (form) {
-            try {
-                const formData = new FormData();
-                formData.append('fileNumber', form.fileNumber);
-                formData.append('hastaName', form.hastaName);
-                formData.append('hastaTC', form.hastaTC);
-                formData.append('taniTitle', form.taniTitle);
-                formData.append('taniDetail', form.taniDetail);
-                formData.append('taniDate', form.taniDate);
-                if (form.taniImage) formData.append('taniImage', form.taniImage);
+    e.preventDefault();
+    if (form) {
+        try {
+            // formData yerine doğrudan form'u JSON olarak gönder
+            const updatedReport = {
+                fileNumber: form.fileNumber,
+                hastaName: form.hastaName,
+                hastaTC: form.hastaTC,
+                taniTitle: form.taniTitle,
+                taniDetail: form.taniDetail,
+                taniDate: form.taniDate,
+                // taniImage'ı kaldır çünkü JSON Server bunu desteklemiyor olabilir
+            };
 
-                await axios.put(`http://localhost:5000/reports/${id}`, formData, {
-                    headers: { 'Content-Type': 'multipart/form-data' }
-                });
-                navigate('/reports');
-            } catch (error) {
-                console.error('Error updating report:', error);
-            }
+            await axios.put(`http://localhost:5000/reports/${id}`, updatedReport, {
+                headers: { 'Content-Type': 'application/json' }
+            });
+            navigate('/reports');
+        } catch (error) {
+            console.error('Error updating report:', error);
         }
-    };
+    }
+};
+
 
     return (
         <div className='px-12'>
